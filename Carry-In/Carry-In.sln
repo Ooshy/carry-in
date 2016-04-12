@@ -18,6 +18,9 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Carry-In\Carry_In\Carry_In.projitems*{e1fe4dbd-156d-447d-bfb8-248772e4ab98}*SharedItemsImports = 13
+		Carry-In\Carry_In\Carry_In.projitems*{20e7a989-2e6d-4f25-af33-dcf54a74f4e4}*SharedItemsImports = 4
+		Carry-In\Carry_In\Carry_In.projitems*{ea025a0d-b023-4a32-a03d-56f30930aaae}*SharedItemsImports = 4
+		Carry-In\Carry_In\Carry_In.projitems*{0e01c1bd-35a4-4d67-b9d4-12cadc2eeaf3}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
