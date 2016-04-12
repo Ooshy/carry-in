@@ -1,4 +1,4 @@
-﻿
+﻿using Carry_In.Login;
 using Xamarin.Forms;
 
 namespace Carry_In
@@ -11,19 +11,19 @@ namespace Carry_In
             MainPage = new Home.HomePage();
 		}
 
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
 
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
 }
