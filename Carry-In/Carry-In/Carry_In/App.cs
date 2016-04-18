@@ -5,11 +5,13 @@ namespace Carry_In
 {
     public class App : Application
 	{
+        public static INavigation Navigation;
 		public App ()
 		{
-            var navigation = new NavigationPage();
-            var login = new LoginPage(new LoginViewModel(navigation));
-            MainPage = login;
+            var login = new LoginPage(new LoginViewModel());
+            var navigation = new NavigationPage(login);
+            Navigation = navigation.Navigation;
+            MainPage = navigation;
 		}
 
         protected override void OnStart()

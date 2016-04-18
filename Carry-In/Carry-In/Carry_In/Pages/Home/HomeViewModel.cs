@@ -7,10 +7,10 @@ namespace Carry_In.Home
 {
     public class HomeViewModel
     {
-        public NavigationPage Navigation { get; set; }
-        public HomeViewModel(NavigationPage navigation)
+        
+        public HomeViewModel()
         {
-            Navigation = navigation;
+            
         }
 
         // Select Restaurant

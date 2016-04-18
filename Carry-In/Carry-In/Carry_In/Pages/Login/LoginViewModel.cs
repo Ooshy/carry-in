@@ -1,18 +1,20 @@
 ﻿using Carry_In.Home;
+
+using Carry_In.Pages.Login.Models;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Carry_In.Login
 {
     public class LoginViewModel
     {
-        private NavigationPage Navigation { get; set; }
-        public LoginViewModel(NavigationPage navigation)
+        public LoginViewModel()
         {
-            Navigation = navigation;
         }
 
-        public void Login(object sender, EventArgs args)
+        
+        public async Task<bool> Login(LoginModel model)
         {
             // Verify Credentials
             // If Successful, Login
@@ -20,9 +22,20 @@ namespace Carry_In.Login
             // Else, Return Error / Home Page
 
             // For Now, Let's Just Advance To The Home Page
-            Navigation?.PushAsync(new HomePage(new HomeViewModel(Navigation), new SearchViewModel(Navigation)));
+            return true;
+            
         }
-        
+
+        public async Task<bool> Login(RegisterModel model)
+        {
+            // Verify Credentials
+            // If Successful, Login
+
+            // Else, Return Error / Home Page
+
+            // For Now, Let's Just Advance To The Home Page
+            return true;
+        }
 
     }
 }

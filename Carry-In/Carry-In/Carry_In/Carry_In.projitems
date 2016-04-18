@@ -28,11 +28,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\SearchViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Commands\LoginCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Commands\RegisterCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Models\LoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Models\RegisterModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>ReceiptPage.xaml</DependentUpon>

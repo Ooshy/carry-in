@@ -12,24 +12,32 @@ namespace Carry_In.Login
         public LoginPage(LoginViewModel viewModel)
         {
             ViewModel = viewModel;
-
+            
 
             Setup();
         }
 
-        private ICommand LoginCommand { get; set; }
+        private ICommand _loginCommand { get; set; }
         public ICommand Login
         {
             get
             {
-                return LoginCommand ?? new LoginCommand(ViewModel);
+                return _loginCommand ?? new LoginCommand(ViewModel);
+            }
+            set
+            {
+
             }
         }
 
         private void Setup()
         {
             BindingContext = ViewModel;
+            
             InitializeComponent();
+
+            LoginElement.BindingContext = this;
+            LoginElement.Command = Login;
         }
     }
 }
