@@ -7,8 +7,9 @@ namespace Carry_In
 	{
 		public App ()
 		{
-            // The root page of your application
-            MainPage = new Home.HomePage();
+            var navigation = new NavigationPage();
+            var login = new LoginPage(new LoginViewModel(navigation));
+            MainPage = login;
 		}
 
         protected override void OnStart()

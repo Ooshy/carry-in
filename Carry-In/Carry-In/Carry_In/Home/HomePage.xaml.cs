@@ -10,9 +10,17 @@ namespace Carry_In.Home
 {
 	public partial class HomePage : ContentPage
 	{
-		public HomePage ()
+        public HomeViewModel ViewModel { get; set; }
+        public HomePage (HomeViewModel homeViewModel, SearchViewModel searchViewModel)
 		{
-			InitializeComponent ();
+            ViewModel = homeViewModel;
+
+            Setup();
 		}
-	}
+
+        private void Setup()
+        {
+            InitializeComponent();
+        }
+    }
 }

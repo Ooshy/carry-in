@@ -5,16 +5,20 @@ namespace Carry_In.Login
 {
     public partial class LoginPage : ContentPage
     {
-        public string MainText { get; set; }
-        public LoginPage()
+        public LoginViewModel ViewModel { get; set; }
+
+        public LoginPage(LoginViewModel viewModel)
         {
-            InitializeComponent();
+            ViewModel = viewModel;
+
+
             Setup();
         }
 
         private void Setup()
         {
-            MainText = "Initial Text";
+            BindingContext = ViewModel;
+            InitializeComponent();
         }
     }
 }
