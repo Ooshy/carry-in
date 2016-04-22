@@ -11,6 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AppInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\CarryInDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CarryInModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\CartPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>CartPage.xaml</DependentUpon>
@@ -35,12 +38,13 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Models\LoginModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Models\RegisterModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>ReceiptPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\Commands\RegisterCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\Models\RegisterModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\RegisterPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>RegisterPage.xaml</DependentUpon>
@@ -84,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Auth\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Restaurant\Readiness\" />
   </ItemGroup>
 </Project>

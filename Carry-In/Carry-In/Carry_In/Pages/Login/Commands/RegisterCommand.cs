@@ -1,4 +1,5 @@
 ﻿using Carry_In.Login;
+using Carry_In.Register;
 using System;
 using System.Windows.Input;
 
@@ -6,10 +7,10 @@ namespace Carry_In.Pages.Login.Commands
 {
     public class RegisterCommand : ICommand
     {
-        private LoginViewModel LoginViewModel { get; set; }
-        public RegisterCommand(LoginViewModel loginViewModel)
+        private LoginPage RegisterViewModel { get; set; }
+        public RegisterCommand(LoginPage loginViewModel)
         {
-            LoginViewModel = loginViewModel;
+            RegisterViewModel = loginViewModel;
             CanRegister = true;
         }
         private bool CanRegister { get; set; }
@@ -24,9 +25,9 @@ namespace Carry_In.Pages.Login.Commands
             return CanRegister; //TODO change this
         }
 
-        public void Execute(object parameter)
+        public async void Execute(object parameter)
         {
-            //LoginViewModel.Login("test", "test");
+            App.Navigation.PushAsync(new RegisterPage(new RegisterViewModel()));
         }
     }
 }

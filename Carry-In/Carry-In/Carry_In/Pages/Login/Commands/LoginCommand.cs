@@ -1,21 +1,18 @@
-﻿using Carry_In.Home;
-using Carry_In.Pages.Login.Models;
+﻿using Carry_In.Login;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
-namespace Carry_In.Login.Commands
+namespace Carry_In.Pages.Login.Commands
 {
     public class LoginCommand : ICommand
     {
-        public LoginViewModel LoginViewModel { get; set; }
+        public LoginPage LoginPage { get; set; }
 
         private bool CanLogIn { get; set; }
 
-        public LoginCommand(LoginViewModel loginViewModel)
+        public LoginCommand(LoginPage loginPage)
         {
-            LoginViewModel = loginViewModel;
+            LoginPage = loginPage;
             CanLogIn = true;
         }
         public event EventHandler CanExecuteChanged;
@@ -29,23 +26,15 @@ namespace Carry_In.Login.Commands
 
         public async void Execute(object parameter)
         {
-            LoginModel model = new LoginModel();
-            model.Username = "Test";
-            model.Password = "Test";
-            bool success = await LoginViewModel.Login(model);
+            bool success = await LoginPage.LoginViewModel.Login();
 
             if (success)
             {
-                await App.Navigation.PushAsync(
-                    new HomePage(
-                        new HomeViewModel(),
-                        new SearchViewModel()
-                        )
-                        );
+                await App.Navigation.PushAsync(App.Home);
             }
             else
             {
-                // error
+                await LoginPage.DisplayAlert("Error", "Invalid username or password.", "Ok");
             }
         }
     }

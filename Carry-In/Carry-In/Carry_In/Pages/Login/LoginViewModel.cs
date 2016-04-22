@@ -11,31 +11,21 @@ namespace Carry_In.Login
     {
         public LoginViewModel()
         {
+            Model = new LoginModel();
         }
 
-        
-        public async Task<bool> Login(LoginModel model)
+        public LoginModel Model { get; set; }
+
+        public async Task<bool> Login()
         {
             // Verify Credentials
+            var user = App.Database.GetUser(Model.Username, Model.Password);
             // If Successful, Login
+            if (user != null)
+                return true;
 
             // Else, Return Error / Home Page
-
-            // For Now, Let's Just Advance To The Home Page
-            return true;
-            
+            return false;
         }
-
-        public async Task<bool> Login(RegisterModel model)
-        {
-            // Verify Credentials
-            // If Successful, Login
-
-            // Else, Return Error / Home Page
-
-            // For Now, Let's Just Advance To The Home Page
-            return true;
-        }
-
     }
 }

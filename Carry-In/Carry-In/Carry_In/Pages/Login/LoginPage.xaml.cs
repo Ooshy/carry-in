@@ -1,5 +1,8 @@
-﻿using Carry_In.Login.Commands;
-using System;
+﻿
+
+using Carry_In.Pages.Login.Commands;
+
+
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -7,12 +10,11 @@ namespace Carry_In.Login
 {
     public partial class LoginPage : ContentPage
     {
-        public LoginViewModel ViewModel { get; set; }
-        
-        public LoginPage(LoginViewModel viewModel)
+        public LoginViewModel LoginViewModel { get; set; }
+
+        public LoginPage(LoginViewModel loginViewModel)
         {
-            ViewModel = viewModel;
-            
+            LoginViewModel = loginViewModel;
 
             Setup();
         }
@@ -22,22 +24,34 @@ namespace Carry_In.Login
         {
             get
             {
-                return _loginCommand ?? new LoginCommand(ViewModel);
+                return _loginCommand ?? new LoginCommand(this);
             }
-            set
-            {
+            set {}
+        }
 
+        
+        private ICommand _registerCommand { get; set; }
+        public ICommand Register
+        {
+            get
+            {
+                return _registerCommand ?? new RegisterCommand(this);
             }
+            set {}
         }
 
         private void Setup()
         {
-            BindingContext = ViewModel;
             
+            BindingContext = LoginViewModel.Model;
+
             InitializeComponent();
 
             LoginElement.BindingContext = this;
             LoginElement.Command = Login;
+
+            RegisterElement.BindingContext = this;
+            RegisterElement.Command = Register;
         }
     }
 }
