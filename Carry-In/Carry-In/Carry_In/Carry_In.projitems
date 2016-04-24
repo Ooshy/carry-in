@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AppInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\CarryInDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FeenaCasualLabel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CarryInModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\CartPage.xaml.cs">
       <SubType>Code</SubType>

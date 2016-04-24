@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carry_In.Home.HomePage">
-  <StackLayout>
-    
-  </StackLayout>
+  <ScrollView HeightRequest="1500">
+    <StackLayout>
+      
+    </StackLayout>
+  </ScrollView>
 	
 </ContentPage>

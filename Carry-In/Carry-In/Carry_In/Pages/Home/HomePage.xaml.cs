@@ -16,6 +16,8 @@ namespace Carry_In.Home
         private void Setup()
         {
             InitializeComponent();
+
+            //this.Content = null;
         }
     }
 }
