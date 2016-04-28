@@ -26,6 +26,8 @@ Carry-In/Carry-In/Carry_In.iOs/bin/**/*
 
 Carry-In/Carry-In/Carry_In.iOs/obj/**/*
 
+Carry-In/packages/**/*
+
 *.dll
 
 Carry-In/Carry-In/Carry_In.iOS/bin/iPhone/Debug/Carry_IniOS.app/_CodeSignature/CodeResources
