@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carry_In.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <Color x:Key="primary">#F44336</Color>
+      <Color x:Key="primary_dark">#D32F2F</Color>
+      <Color x:Key="primary_light">#FFCDD2</Color>
+      <Color x:Key="accent">#FFC107</Color>
+      <Color x:Key="primary_text">#212121</Color>
+      <Color x:Key="secondary_text">#727272</Color>
+      <Color x:Key="icons">#FFFFFF</Color>
+      <Color x:Key="divider">#B6B6B6</Color>
+
+
+      <Style x:Key="primaryLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource primary}" />
+      </Style>
+
+      <Style x:Key="primaryEntry" TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="{StaticResource primary}" />
+        <Setter Property="TextColor" Value="{StaticResource primary}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource primary_light}" />
+      </Style>
+
+      <Style x:Key="primaryLightButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource icons}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource primary_light}"  />
+      </Style>
+
+      <Style x:Key="primaryButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource icons}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource primary}"  />
+      </Style>
+
+      <Style x:Key="accentButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource icons}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource accent}"  />
+      </Style>
+
+      <Style x:Key="primaryDarkBackground" TargetType="View">
+        <Setter Property="BackgroundColor" Value="{StaticResource primary_dark}" />
+      </Style>
+
+      <Style x:Key="primaryLightBackground" TargetType="View">
+        <Setter Property="BackgroundColor" Value="{StaticResource primary_light}" />
+      </Style>
+
+      <Style x:Key="iconsBackground" TargetType="View">
+        <Setter Property="BackgroundColor" Value="{StaticResource icons}" />
+      </Style>
+      
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

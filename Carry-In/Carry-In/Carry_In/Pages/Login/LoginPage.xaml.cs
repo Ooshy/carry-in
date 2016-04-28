@@ -49,7 +49,7 @@ namespace Carry_In.Login
 
             LoginElement.BindingContext = this;
             LoginElement.Command = Login;
-
+            
             RegisterElement.BindingContext = this;
             RegisterElement.Command = Register;
         }

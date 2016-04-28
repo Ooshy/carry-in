@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <style name="StatusBarThemed" parent="android:Theme.Material.Light">
+    <item name="android:colorPrimaryDark">@color/tealdark</item>
+    <item name="android:statusBarColor">@color/teal</item>
+    <item name="android:colorPrimary">@color/teal</item>
+  </style>
+</resources>

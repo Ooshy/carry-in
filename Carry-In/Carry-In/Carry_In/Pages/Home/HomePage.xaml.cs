@@ -3,10 +3,10 @@ using Xamarin.Forms;
 
 namespace Carry_In.Home
 {
-    public partial class HomePage : ContentPage
+    public partial class HomePage : MasterDetailPage
 	{
         public HomeViewModel ViewModel { get; set; }
-        public HomePage (HomeViewModel homeViewModel, SearchViewModel searchViewModel)
+        public HomePage (HomeViewModel homeViewModel)
 		{
             ViewModel = homeViewModel;
 

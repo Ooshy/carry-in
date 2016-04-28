@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.CarryIn" android:installLocation="auto" android:versionCode="1" android:versionName="alpha">
 	<uses-sdk android:minSdkVersion="15" />
 	<support-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" />
-	<application android:label="Carry In" android:icon="@mipmap/ic_launcher"></application>
+	<application android:label="Carry In" android:icon="@mipmap/ic_launcher" android:theme="@style/StatusBarThemed"></application>
 </manifest>

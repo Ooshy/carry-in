@@ -33,8 +33,9 @@ namespace Carry_In.Pages.Register.Commands
 
             if (success)
             {
-                await RegisterPage.DisplayAlert("Success", "Welcome to Carry-in!", "Continue");
+                await App.Navigation.PopAsync(false);
                 await App.Navigation.PushAsync(App.Home);
+                await RegisterPage.DisplayAlert("Success", "Welcome to Carry-in!", "Continue");
             }
             else
             {
