@@ -1,0 +1,11 @@
+﻿<Properties StartupItem="Carry-In/Carry_In.iOS/Carry_In.iOS.csproj" GitUserInfo="UsingMD">
+  <DisabledProjects>
+    <String>Carry-In/Carry_In.UWP/Carry_In.UWP.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
