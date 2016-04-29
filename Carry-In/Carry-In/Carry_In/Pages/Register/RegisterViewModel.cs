@@ -2,7 +2,7 @@
 using Carry_In.Pages.Register.Models;
 using System.Threading.Tasks;
 using System;
-using Carry_In.Models;
+
 
 namespace Carry_In.Register
 {
@@ -12,10 +12,8 @@ namespace Carry_In.Register
         public RegisterViewModel()
         {
             RegisterModel = new RegisterModel();
-            CarryInModel = new CarryInModel(RegisterModel);
         }
 
-        public CarryInModel CarryInModel { get; set; }
         public RegisterModel RegisterModel { get; set; }
         public async Task<bool> Register()
         {
@@ -35,7 +33,7 @@ namespace Carry_In.Register
 
         private bool AddUser()
         {
-            return App.Database.SaveUser(CarryInModel) > 0;
+            return App.Database.SaveUser(RegisterModel) > 0;
         }
 
         private bool Validate()

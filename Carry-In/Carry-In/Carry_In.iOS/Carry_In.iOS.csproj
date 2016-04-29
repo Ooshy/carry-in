@@ -135,21 +135,53 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
-    <ImageAsset Include="Media.xcassets\cart_icon.imageset\Contents.json" />
-    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%401x.png" />
-    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%402x.png" />
-    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%403x.png" />
-    <ImageAsset Include="Media.xcassets\login_icon.imageset\Contents.json" />
-    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%401x.png" />
-    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%402x.png" />
-    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%403x.png" />
-    <ImageAsset Include="Media.xcassets\settings_icon.imageset\Contents.json" />
-    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%401x.png" />
-    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%402x.png" />
-    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%403x.png" />
-    <ImageAsset Include="Media.xcassets\user_icon.imageset\Contents.json" />
-    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%401x.png" />
-    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%402x.png" />
-    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%403x.png" />
+    <ImageAsset Include="Media.xcassets\cart_icon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\cart_icon.imageset\cart_icon~universal%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\login_icon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\login_icon.imageset\login_icon~universal%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\settings_icon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\settings_icon.imageset\settings_icon~universal%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\user_icon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Media.xcassets\user_icon.imageset\user_icon~universal%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
 </Project>

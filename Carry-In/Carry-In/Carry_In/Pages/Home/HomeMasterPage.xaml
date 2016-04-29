@@ -5,8 +5,7 @@
              Title="Carry In"
              Style="{StaticResource iconsBackground}">
   <ContentPage.Content>
-    <StackLayout VerticalOptions="FillAndExpand" Style="{StaticResource iconsBackground}" >
-      <Label Text="Carry In" HorizontalOptions="Center" Style="{StaticResource primaryLabel}" FontSize="Large"/>
+    <StackLayout VerticalOptions="Fill" Style="{StaticResource iconsBackground}" >
       <ListView x:Name="_menuList" VerticalOptions="FillAndExpand" SeparatorVisibility="None" >
         <ListView.ItemTemplate>
           <DataTemplate>

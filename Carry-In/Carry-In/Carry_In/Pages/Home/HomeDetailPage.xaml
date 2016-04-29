@@ -8,9 +8,35 @@
     <ToolbarItem Icon="login_icon.png"  x:Name="LoginElement" />
   </ContentPage.ToolbarItems>
   <ScrollView>
-    <StackLayout HeightRequest="1500">
-      <Label Text="Nearby" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>
-      <Label Text="Favorites" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>
+    <StackLayout>
+      <Label Text="Recently Visited" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>
+      <ListView  x:Name="RecentPlacesListView" RowHeight="150">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell >
+              <StackLayout BackgroundColor="#eee"
+              Orientation="Vertical"> 
+                <StackLayout Orientation="Horizontal">
+                  <Image  Aspect="AspectFit" Source="{Binding Source}" />
+                  <Label Text="{Binding Title}"
+                         Style="{StaticResource primaryLabel}"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         FontSize="Large"/>
+                  <Label Text="{Binding Description}"
+                         Style="{StaticResource primaryLabel}"
+                         HorizontalOptions="EndAndExpand"
+                         TextColor="#503026"
+                         VerticalOptions="Center"
+                         FontSize="Large"/>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      <!--<Label Text="Nearby" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>
+      <Label Text="Favorites" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>-->
 
 
 

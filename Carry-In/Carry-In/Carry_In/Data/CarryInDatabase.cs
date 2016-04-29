@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using SQLite;
-using Carry_In.Pages.Login.Models;
+
 using Carry_In.Pages.Register.Models;
-using Carry_In.Models;
+
 
 namespace Carry_In.Data
 {
@@ -53,11 +53,11 @@ namespace Carry_In.Data
             database.CreateTable<RegisterModel>();
         }
 
-        public IEnumerable<CarryInModel> GetUsers()
+        public IEnumerable<RegisterModel> GetUsers()
         {
             lock (locker)
             {
-                return (from i in database.Table<RegisterModel>() select new CarryInModel(i)).ToList();
+                return (from i in database.Table<RegisterModel>() select i).ToList();
             }
         }
 
@@ -69,32 +69,28 @@ namespace Carry_In.Data
             }
         }
 
-        public CarryInModel GetUser(string email, string password)
+        public RegisterModel GetUser(string email, string password)
         {
             lock (locker)
             {
                 var user = database.Table<RegisterModel>().FirstOrDefault(x => x.Email == email && x.Password == password);
 
-                if (user != null)
-                    return new CarryInModel(registrationInfo: user);
-
-                return null;
+                return user;
             }
         }
 
-        public int SaveUser(CarryInModel user)
+        public int SaveUser(RegisterModel user)
         {
             lock (locker)
             {
-                var registrationInfo = user.RegistrationInfo;
-                if (registrationInfo.ID != 0)
+                if (user.ID != 0)
                 {
                     database.Update(user);
-                    return registrationInfo.ID;
+                    return user.ID;
                 }
                 else
                 {
-                    return database.Insert(registrationInfo);
+                    return database.Insert(user);
                 }
             }
         }

@@ -1,44 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Carry_In.Login.LoginPage">
-  <Grid Style="{StaticResource iconsBackground}">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-      <!--12 Columns-->
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-      <ColumnDefinition Width="1*"/>
-    </Grid.ColumnDefinitions>
-    <!--<Image Source=""-->
-    
-    <Label Style="{StaticResource primaryLabel}" Text="Carry-In" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="10" FontSize="72"/>
-    <Entry Style="{StaticResource primaryEntry}" Placeholder="Email" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="4"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Username}" Keyboard="Email" />
-    <Entry Style="{StaticResource primaryEntry}" Placeholder="Password" IsPassword="true" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="5"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Password}" />
-    <Button Style="{StaticResource primaryButton}" Text="Login" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="6"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="LoginElement"/>
-    <Button Style="{StaticResource accentButton}" Text="Register" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="7"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="RegisterElement"/>
-  </Grid>
+             x:Class="Carry_In.Login.LoginPage"
+             Style="{StaticResource iconsBackground}">
+  <ScrollView>
+    <Grid Style="{StaticResource iconsBackground}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <!--12 Columns-->
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+      </Grid.ColumnDefinitions>
+      <!--<Image Source=""-->
 
+      <Label Style="{StaticResource primaryLabel}" Text="Carry-In" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="10" FontSize="72"/>
+      <Entry Style="{StaticResource primaryEntry}" Placeholder="Email" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="4"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Username}" Keyboard="Email" />
+      <Entry Style="{StaticResource primaryEntry}" Placeholder="Password" IsPassword="true" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="5"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Password}" />
+      <Button Style="{StaticResource primaryButton}" Text="Login" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="6"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="LoginElement"/>
+      <Button Style="{StaticResource accentButton}" Text="Register" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="7"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="RegisterElement"/>
+    </Grid>
+  </ScrollView>
 
 
 </ContentPage>

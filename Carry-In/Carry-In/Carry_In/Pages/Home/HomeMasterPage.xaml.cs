@@ -35,7 +35,7 @@ namespace Carry_In.Pages.Home
             }
         }
 
-        public HomeMasterPage ()
+        public HomeMasterPage () 
 		{
 			InitializeComponent ();
 

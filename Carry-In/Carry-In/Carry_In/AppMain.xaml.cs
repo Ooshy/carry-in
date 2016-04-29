@@ -1,6 +1,6 @@
 ﻿using Carry_In.Data;
 using Carry_In.Home;
-using Carry_In.Login;
+
 using Xamarin.Forms;
 
 namespace Carry_In
@@ -44,6 +44,7 @@ namespace Carry_In
                 BarBackgroundColor = (Color)Application.Current.Resources["icons"],
                 BarTextColor = (Color)Application.Current.Resources["primary"],
                 Title = "Menu",
+                Icon = "menu_icon.png"
             };
 
             Navigation = navigation.Navigation;
