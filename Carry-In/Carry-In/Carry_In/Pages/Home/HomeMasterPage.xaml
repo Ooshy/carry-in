@@ -6,7 +6,7 @@
              Style="{StaticResource iconsBackground}">
   <ContentPage.Content>
     <StackLayout VerticalOptions="Fill" Style="{StaticResource iconsBackground}" >
-      <ListView x:Name="_menuList" VerticalOptions="FillAndExpand" SeparatorVisibility="None" >
+      <ListView x:Name="_menuList" VerticalOptions="FillAndExpand" SeparatorVisibility="Default">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" Detail="{Binding Detail}" TextColor="{StaticResource primary}" DetailColor="{StaticResource primary}" />

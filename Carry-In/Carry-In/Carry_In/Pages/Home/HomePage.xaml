@@ -1,11 +1,12 @@
 ﻿<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:Carry_In.Pages.Home;"
+                  Title="Carry In"
                   x:Class="Carry_In.Home.HomePage">
   <MasterDetailPage.Master>
     <local:HomeMasterPage x:Name="masterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <local:HomeDetailPage x:Name="detailPage" />
+    
   </MasterDetailPage.Detail>
 </MasterDetailPage>

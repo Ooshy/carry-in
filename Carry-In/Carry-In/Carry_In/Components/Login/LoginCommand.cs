@@ -3,17 +3,14 @@ using Carry_In.Login;
 using System;
 using System.Windows.Input;
 
-namespace Carry_In.Pages.Home.Commands
+namespace Carry_In.Components.Login
 {
     public class LoginCommand : ICommand
     {
-        public HomeDetailPage HomePage { get; set; }
-
         private bool CanLogIn { get; set; }
 
-        public LoginCommand(HomeDetailPage homePage)
+        public LoginCommand()
         {
-            HomePage = homePage;
             CanLogIn = true;
         }
         public event EventHandler CanExecuteChanged;
@@ -27,6 +24,7 @@ namespace Carry_In.Pages.Home.Commands
 
         public async void Execute(object parameter)
         {
+            App.Home.IsPresented = false;
             await App.Navigation.PushAsync(new LoginPage(new LoginViewModel()));   
         }
     }

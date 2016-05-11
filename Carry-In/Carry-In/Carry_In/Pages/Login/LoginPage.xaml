@@ -34,10 +34,10 @@
       </Grid.ColumnDefinitions>
       <!--<Image Source=""-->
 
-      <Label Style="{StaticResource primaryLabel}" Text="Carry-In" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="10" FontSize="72"/>
+      <Label Style="{StaticResource primaryLabel}" Text="Carry-In" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="10" FontSize="Large"/>
       <Entry Style="{StaticResource primaryEntry}" Placeholder="Email" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="4"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Username}" Keyboard="Email" />
       <Entry Style="{StaticResource primaryEntry}" Placeholder="Password" IsPassword="true" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="5"  Grid.Column="2" Grid.ColumnSpan="9" Text="{Binding Password}" />
-      <Button Style="{StaticResource primaryButton}" Text="Login" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="6"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="LoginElement"/>
+      <Button Style="{StaticResource darkPrimaryButton}" Text="Login" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="6"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="LoginElement"/>
       <Button Style="{StaticResource accentButton}" Text="Register" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="7"  Grid.Column="4" Grid.ColumnSpan="5" x:Name="RegisterElement"/>
     </Grid>
   </ScrollView>

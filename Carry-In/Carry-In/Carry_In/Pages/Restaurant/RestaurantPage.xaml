@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Carry_In.Restaurant.RestaurantPage">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+             xmlns:local="clr-namespace:Carry_In.Pages.Restaurant.FoodTabs;"
+             x:Class="Carry_In.Restaurant.RestaurantPage"
+             Style="{StaticResource iconsBackground}">
+	<local:AppetizersPage />
+  <local:BeveragesPage />
+  <local:DesertsPage />
+  <local:EntreesPage />
+</TabbedPage>

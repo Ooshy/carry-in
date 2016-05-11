@@ -30,7 +30,8 @@ namespace Carry_In.Pages.Login.Commands
 
             if (success)
             {
-                await App.Navigation.PushAsync(App.Home);
+                App.LoggedIn = true;
+                await App.Navigation.PopAsync();
             }
             else
             {

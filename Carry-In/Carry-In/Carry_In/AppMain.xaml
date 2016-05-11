@@ -7,7 +7,7 @@
       <Color x:Key="primary">#F44336</Color>
       <Color x:Key="primary_dark">#D32F2F</Color>
       <Color x:Key="primary_light">#FFCDD2</Color>
-      <Color x:Key="accent">#FFC107</Color>
+      <Color x:Key="accent">#FF9800</Color>
       <Color x:Key="primary_text">#212121</Color>
       <Color x:Key="secondary_text">#727272</Color>
       <Color x:Key="icons">#FFFFFF</Color>
@@ -17,7 +17,7 @@
       <Style x:Key="primaryLabel" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource primary}" />
       </Style>
-
+      
       <Style x:Key="primaryEntry" TargetType="Entry">
         <Setter Property="PlaceholderColor" Value="{StaticResource primary}" />
         <Setter Property="TextColor" Value="{StaticResource primary}" />
@@ -34,6 +34,11 @@
         <Setter Property="BackgroundColor" Value="{StaticResource primary}"  />
       </Style>
 
+      <Style x:Key="darkPrimaryButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource icons}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource primary_dark}"  />
+      </Style>
+
       <Style x:Key="accentButton" TargetType="Button">
         <Setter Property="TextColor" Value="{StaticResource icons}" />
         <Setter Property="BackgroundColor" Value="{StaticResource accent}"  />
@@ -47,8 +52,21 @@
         <Setter Property="BackgroundColor" Value="{StaticResource primary_light}" />
       </Style>
 
+      <Style x:Key="restaurantNameListLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource primary_dark}" />
+        <Setter Property="FontFamily" Value="" />
+      </Style>
+      
       <Style x:Key="iconsBackground" TargetType="View">
         <Setter Property="BackgroundColor" Value="{StaticResource icons}" />
+      </Style>
+
+      <Style x:Key="homeNav" TargetType="NavigationPage">
+        <Setter Property="BackgroundColor" Value="{StaticResource icons}" />
+        <Setter Property="BarBackgroundColor" Value="{StaticResource icons}" />
+        <Setter Property="BarTextColor" Value="{StaticResource primary}" />
+        <Setter Property="Title" Value="Menu" />
+        <Setter Property="Icon" Value="menu_icon.png" />
       </Style>
       
     </ResourceDictionary>

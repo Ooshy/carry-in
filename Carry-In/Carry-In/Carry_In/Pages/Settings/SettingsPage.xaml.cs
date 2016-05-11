@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Carry_In.Components.Login;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,9 @@ namespace Carry_In.Pages.Settings
 		public SettingsPage ()
 		{
 			InitializeComponent ();
-		}
+
+            if (!App.LoggedIn)
+                ToolbarItems.Add(new LoginToolbarItem());
+        }
 	}
 }

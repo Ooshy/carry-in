@@ -1,6 +1,6 @@
 ﻿using Carry_In.Data;
 using Carry_In.Home;
-
+using Carry_In.Pages.Home;
 using Xamarin.Forms;
 
 namespace Carry_In
@@ -8,12 +8,13 @@ namespace Carry_In
 	public partial class App : Application
     {
         public static INavigation Navigation;
-        private static Page _home;
-        public static Page Home
+
+        private static MasterDetailPage _home;
+        public static MasterDetailPage Home
         {
             get
             {
-                return _home ?? (_home = new Home.HomePage(new Carry_In.Home.HomeViewModel()));
+                return _home ?? (_home = new HomePage(new HomeViewModel()));
             }
         }
 
@@ -26,39 +27,29 @@ namespace Carry_In
                 return database;
             }
         }
+
+        public static bool LoggedIn { get; internal set; }
+
         public App()
         {
             InitializeComponent();
 
-            InitializeLoginPage();
-
             InitializeHomePage();
         }
 
-        private void InitializeLoginPage()
+        private void InitializeHomePage()
         {
-            var home = new HomePage(new HomeViewModel());
-            var navigation = new NavigationPage(home)
-            {
-                BackgroundColor = (Color)Application.Current.Resources["icons"],
-                BarBackgroundColor = (Color)Application.Current.Resources["icons"],
-                BarTextColor = (Color)Application.Current.Resources["primary"],
-                Title = "Menu",
-                Icon = "menu_icon.png"
-            };
+            _home = new HomePage(new HomeViewModel());
 
-            Navigation = navigation.Navigation;
-            MainPage = navigation;
-        }
+            LoggedIn = false;
 
-        private static void InitializeHomePage()
-        {
-
+            MainPage = _home;
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            // check if logged in
         }
 
         protected override void OnSleep()

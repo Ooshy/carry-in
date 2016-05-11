@@ -14,9 +14,14 @@
       <DependentUpon>AppMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Components\Login\LoginCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\Login\LoginToolbarItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\CarryInDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FeenaCasualLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FoodItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Restaurant.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\CartPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>CartPage.xaml</DependentUpon>
@@ -29,13 +34,16 @@
       <DependentUpon>ConfirmationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Confirmation\ConfirmationViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\Commands\LoginCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeDetailPage.xaml.cs">
       <DependentUpon>HomeDetailPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeMasterPage.xaml.cs">
       <DependentUpon>HomeMasterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeNavigationPage.xaml.cs">
+      <DependentUpon>HomeNavigationPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomePage.xaml.cs">
@@ -74,11 +82,28 @@
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\RegisterViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\AppetizersPage.xaml.cs">
+      <DependentUpon>AppetizersPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\BeveragesPage.xaml.cs">
+      <DependentUpon>BeveragesPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\DesertsPage.xaml.cs">
+      <DependentUpon>DesertsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\EntreesPage.xaml.cs">
+      <DependentUpon>EntreesPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\RestaurantPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>RestaurantPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\RestaurantViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\TextTagCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -116,8 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Auth\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\Home\Models\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\Restaurant\Readiness\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppMain.xaml">
@@ -145,6 +168,26 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Profile\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\AppetizersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\EntreesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\BeveragesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\DesertsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Home\HomeNavigationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

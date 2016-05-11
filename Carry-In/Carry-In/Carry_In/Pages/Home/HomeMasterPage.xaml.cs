@@ -15,31 +15,22 @@ namespace Carry_In.Pages.Home
 	{
         public ListView MenuList { get { return _menuList; } }
 
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (MenuList.SelectedItem != null)
-            {
-                var menuItem = e.SelectedItem as MenuItem;
-
-                if (menuItem == null)
-                    return;
-
-                _menuList.SelectedItem = null;
-
-                var page = Activator.CreateInstance(menuItem.TargetType) as Page;
-
-                if (page == null)
-                    return;
-
-                await App.Navigation.PushAsync(page);
-            }
-        }
+        
 
         public HomeMasterPage () 
 		{
 			InitializeComponent ();
 
             var masterPageItems = new List<MenuItem>();
+
+            masterPageItems.Add(new MenuItem
+            {
+                Title = "Home",
+                IconSource = "home_icon.png",
+                Detail = "",
+                TargetType = typeof(HomeDetailPage)
+            });
+
             masterPageItems.Add(new MenuItem
             {
                 Title = "Cart",
@@ -67,10 +58,6 @@ namespace Carry_In.Pages.Home
 
 
             _menuList.ItemsSource = masterPageItems;
-
-            _menuList.ItemSelected += OnItemSelected;
         }
-
-
 	}
 }
