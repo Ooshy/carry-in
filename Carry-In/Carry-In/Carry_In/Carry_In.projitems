@@ -16,125 +16,120 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Components\Login\LoginCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\Login\LoginToolbarItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\CarryInDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\SQLite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FeenaCasualLabel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\FoodItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Location.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Restaurant.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\CartPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Refreshable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FoodItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Restaurant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cart\CartPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>CartPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\CartViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\Models\ShoppingCart.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Cart\Models\ShoppingCartItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Confirmation\ConfirmationPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cart\CartViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cart\Models\ShoppingCart.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Cart\Models\ShoppingCartItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Confirmation\ConfirmationPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>ConfirmationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Confirmation\ConfirmationViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeDetailPage.xaml.cs">
-      <DependentUpon>HomeDetailPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Confirmation\ConfirmationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\RecentlyVisitedPage.xaml.cs">
+      <DependentUpon>RecentlyVisitedPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeMasterPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\HomeMasterPage.xaml.cs">
       <DependentUpon>HomeMasterPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeNavigationPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\HomeNavigationPage.xaml.cs">
       <DependentUpon>HomeNavigationPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\HomePage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\HomeViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\MenuItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Home\SearchViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Commands\LoginCommand.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Commands\RegisterCommand.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\HomeTabbedPage.xaml.cs">
+      <DependentUpon>HomeTabbedPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\MenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Home\SearchViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login\Commands\LoginCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login\Commands\RegisterCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login\LoginPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\Models\LoginModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Profile\ProfilePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Login\Models\LoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Profile\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\Models\SimpleReceipt.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Receipt\Models\SimpleReceipt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Receipt\ReceiptPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>ReceiptPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Recents\RecentsPage.xaml.cs">
-      <DependentUpon>RecentsPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\Commands\RegisterCommand.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\Models\RegisterModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\RegisterPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Receipt\ReceiptViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Register\Commands\RegisterCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Register\Models\RegisterModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Register\RegisterPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Register\RegisterViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\AppetizersPage.xaml.cs">
-      <DependentUpon>AppetizersPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\Register\RegisterViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\FoodPage.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>FoodPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\BeveragesPage.xaml.cs">
-      <DependentUpon>BeveragesPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\DesertsPage.xaml.cs">
-      <DependentUpon>DesertsPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\EntreesPage.xaml.cs">
-      <DependentUpon>EntreesPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\RestaurantPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\FoodType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\FoodViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\RestaurantPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>RestaurantPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\RestaurantViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Restaurant\TextTagCell.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingsPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\RestaurantViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Restaurant\FoodItemCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Settings\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Cart\CartPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Cart\CartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Confirmation\ConfirmationPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Confirmation\ConfirmationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Home\HomePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Home\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Login\LoginPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Login\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Receipt\ReceiptPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Receipt\ReceiptPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Register\RegisterPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Register\RegisterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\RestaurantPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Restaurant\FoodPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Restaurant\RestaurantPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -151,43 +146,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Home\HomeMasterPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Home\HomeMasterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Home\HomeDetailPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Home\RecentlyVisitedPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Recents\RecentsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Settings\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Profile\ProfilePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Profile\ProfilePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Home\HomeNavigationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\AppetizersPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\EntreesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\BeveragesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Restaurant\FoodTabs\DesertsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Home\HomeNavigationPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\Home\HomeTabbedPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

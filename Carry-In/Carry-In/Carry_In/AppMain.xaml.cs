@@ -1,6 +1,4 @@
-﻿using Carry_In.Data;
-using Carry_In.Home;
-using Carry_In.Pages.Home;
+﻿using Carry_In.Home;
 using Xamarin.Forms;
 
 namespace Carry_In
@@ -10,23 +8,12 @@ namespace Carry_In
         public static INavigation Navigation;
 
         private static MasterDetailPage _home;
-        public static MasterDetailPage Home
-        {
-            get
-            {
-                return _home ?? (_home = new HomePage(new HomeViewModel()));
-            }
-        }
+        public static MasterDetailPage Home => _home ?? (_home = new HomePage { BindingContext = new HomeViewModel() });
+            
 
-        static CarryInDatabase database;
-        public static CarryInDatabase Database
-        {
-            get
-            {
-                database = database ?? new CarryInDatabase();
-                return database;
-            }
-        }
+
+        //private static CarryInDatabase _database;
+        //public static CarryInDatabase Database => _database ?? (_database = new CarryInDatabase());
 
         public static bool LoggedIn { get; internal set; }
 
@@ -39,11 +26,9 @@ namespace Carry_In
 
         private void InitializeHomePage()
         {
-            _home = new HomePage(new HomeViewModel());
-
             LoggedIn = false;
 
-            MainPage = _home;
+            MainPage = Home;
         }
 
         protected override void OnStart()

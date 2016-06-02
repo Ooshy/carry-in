@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carry_In.Login.LoginPage"
+             Style="{StaticResource iconsBackground}"
+             Title="Login">
+  <ScrollView>
+    <Grid Style="{StaticResource iconsBackground}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <!--12 Columns-->
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+      </Grid.ColumnDefinitions>
+      <Entry Style="{StaticResource primaryEntry}" Placeholder="Email" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="3"  Grid.Column="1" Grid.ColumnSpan="10" Text="{Binding Model.Username}" Keyboard="Email" />
+      <Entry Style="{StaticResource primaryEntry}" Placeholder="Password" IsPassword="true" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan="10" Text="{Binding Model.Password}" />
+      <Button Style="{StaticResource darkPrimaryButton}" Text="Login" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="6"  Grid.Column="3" Grid.ColumnSpan="6" x:Name="LoginElement"/>
+      <Button Style="{StaticResource accentButton}" Text="Register" VerticalOptions="Center" HorizontalOptions="Fill" Grid.Row="7"  Grid.Column="3" Grid.ColumnSpan="6" x:Name="RegisterElement"/>
+    </Grid>
+  </ScrollView>
+
+
+</ContentPage>

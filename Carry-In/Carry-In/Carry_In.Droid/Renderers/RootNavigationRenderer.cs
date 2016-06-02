@@ -23,8 +23,9 @@ namespace Carry_In.Droid
             // http://stackoverflow.com/questions/14606294/remove-icon-logo-from-action-bar-on-android
             var actionBar = ((Activity)Context).ActionBar;
             
+            actionBar.Title = "Home";
+            actionBar.SetDisplayShowTitleEnabled(true);
             actionBar.SetIcon(Drawable.menu_icon);
-            actionBar.Title = "Carry In";
         }
     }
 }
