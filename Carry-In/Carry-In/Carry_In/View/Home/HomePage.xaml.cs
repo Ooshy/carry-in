@@ -1,5 +1,5 @@
 ﻿
-using Carry_In.Pages.Home;
+using Carry_In.View.Home;
 using System;
 using Xamarin.Forms;
 

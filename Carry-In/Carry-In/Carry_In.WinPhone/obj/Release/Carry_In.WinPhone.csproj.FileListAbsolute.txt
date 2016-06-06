@@ -50,3 +50,5 @@ C:\Users\Chris\Source\Repos\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Rel
 C:\Users\Chris\Source\Repos\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Release\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Users\Chris\Source\Repos\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Release\Xamarin.Forms.Platform.WinRT.Phone.pri.xml
 C:\Users\Chris\Source\Repos\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Release\ProjectArchitectures.txt
+\\Mac\Home\Documents\GitHub\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Release\Carry_In.WinPhone.exe
+\\Mac\Home\Documents\GitHub\carry-in\Carry-In\Carry-In\Carry_In.WinPhone\obj\Release\Carry_In.WinPhone.pdb

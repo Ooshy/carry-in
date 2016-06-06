@@ -1,6 +1,6 @@
 ﻿
 
-namespace Carry_In.Pages.Register.Models
+namespace Carry_In.View.Register.Models
 {
     public class RegisterModel
     {        

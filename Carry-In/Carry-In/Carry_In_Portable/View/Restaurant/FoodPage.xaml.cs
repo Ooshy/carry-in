@@ -1,4 +1,4 @@
-﻿using Carry_In.Models;
+﻿using Carry_In.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Restaurant.FoodTabs
+namespace Carry_In.View.Restaurant.FoodTabs
 {
     public partial class FoodPage : ContentPage
     {

@@ -13,7 +13,6 @@
       <Color x:Key="icons">#FFFFFF</Color>
       <Color x:Key="divider">#B6B6B6</Color>
 
-
       <Style x:Key="primaryLabel" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource primary}" />
       </Style>

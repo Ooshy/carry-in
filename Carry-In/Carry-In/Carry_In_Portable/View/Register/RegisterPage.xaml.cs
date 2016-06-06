@@ -1,5 +1,5 @@
 ﻿
-using Carry_In.Pages.Register.Commands;
+using Carry_In.View.Register.Commands;
 using System.Windows.Input;
 using Xamarin.Forms;
 

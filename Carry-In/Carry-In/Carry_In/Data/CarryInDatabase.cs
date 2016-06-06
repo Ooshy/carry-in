@@ -4,7 +4,7 @@
 //using System.Linq;
 //using SQLite;
 
-//using Carry_In.Pages.Register.Models;
+//using Carry_In.View.Register.Models;
 
 
 //namespace Carry_In.Data

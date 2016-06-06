@@ -1,6 +1,6 @@
 ﻿using Carry_In.Home;
 
-using Carry_In.Pages.Login.Models;
+using Carry_In.View.Login.Models;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;

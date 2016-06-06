@@ -1151,6 +1151,9 @@ namespace Carry_In.Droid
 			// aapt resource value: 0x7f0c000d
 			public const int background_material_light = 2131492877;
 			
+			// aapt resource value: 0x7f0c0048
+			public const int black = 2131492936;
+			
 			// aapt resource value: 0x7f0c000e
 			public const int bright_foreground_disabled_material_dark = 2131492878;
 			
@@ -1343,11 +1346,8 @@ namespace Carry_In.Droid
 			// aapt resource value: 0x7f0c003d
 			public const int switch_thumb_normal_material_light = 2131492925;
 			
-			// aapt resource value: 0x7f0c0048
-			public const int teal = 2131492936;
-			
 			// aapt resource value: 0x7f0c0049
-			public const int tealdark = 2131492937;
+			public const int white = 2131492937;
 			
 			static Color()
 			{

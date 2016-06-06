@@ -1,6 +1,6 @@
 ﻿
 
-namespace Carry_In.Pages.Login.Models
+namespace Carry_In.View.Login.Models
 {
     public class LoginModel
     {

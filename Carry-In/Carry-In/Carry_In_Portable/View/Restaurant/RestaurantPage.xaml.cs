@@ -1,11 +1,11 @@
 ﻿
-using Carry_In.Pages.Restaurant;
-using Carry_In.Pages.Restaurant.FoodTabs;
+using Carry_In.View.Restaurant;
+using Carry_In.View.Restaurant.FoodTabs;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Restaurant
+namespace Carry_In.View.Restaurant
 {
     public partial class RestaurantPage : TabbedPage
     {

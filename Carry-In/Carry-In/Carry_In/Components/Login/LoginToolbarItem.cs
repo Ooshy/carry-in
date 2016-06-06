@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Carry_In.Components.Login
 {
-	public class LoginToolbarItem : ToolbarItem
+	public class LoginRedirectButton : ToolbarItem
 	{
-		public LoginToolbarItem ()
+		public LoginRedirectButton ()
 		{
             Text = "Hello ContentView";
             Icon = "login_icon.png";

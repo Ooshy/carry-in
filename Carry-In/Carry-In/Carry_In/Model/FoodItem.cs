@@ -1,6 +1,6 @@
 ﻿
 
-namespace Carry_In.Models
+namespace Carry_In.Model
 {
     public class FoodItem
     {

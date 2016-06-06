@@ -1,18 +1,18 @@
-﻿using Carry_In.Models;
+﻿using Carry_In.Model;
 using System.Collections.Generic;
 
-namespace Carry_In.Pages.Restaurant.FoodTabs
+namespace Carry_In.View.Restaurant.FoodTabs
 {
     public class RestaurantViewModel
     {
-        public Models.Restaurant RestaurantModel { get; set; }
-        public RestaurantViewModel(Models.Restaurant restaurant)
+        public Model.Restaurant RestaurantModel { get; set; }
+        public RestaurantViewModel(Model.Restaurant restaurant)
         {
             RestaurantModel = restaurant;
         }
 
 
-        public IList<FoodItem> CurrentFoods
+        public IList<Food> CurrentFoods
         {
             get
             {
@@ -22,8 +22,8 @@ namespace Carry_In.Pages.Restaurant.FoodTabs
 
         public FoodType CurrentFoodType { get; set; }
 
-        private IDictionary<FoodType, IList<FoodItem>> foods_ = new Dictionary<FoodType, IList<FoodItem>>();
-        public IList<FoodItem> Foods(FoodType foodType)
+        private IDictionary<FoodType, IList<Food>> foods_ = new Dictionary<FoodType, IList<Food>>();
+        public IList<Food> Foods(FoodType foodType)
         {
             if (foods_.ContainsKey(foodType))
                 return foods_[foodType];
@@ -33,16 +33,16 @@ namespace Carry_In.Pages.Restaurant.FoodTabs
             }
         }
 
-        private IList<FoodItem> PopulateFoods(FoodType foodType)
+        private IList<Food> PopulateFoods(FoodType foodType)
         {
-            List<FoodItem> foods = new List<FoodItem>();
+            List<Food> foods = new List<Food>();
             //TODO Find Foods within the Restaurant Model
             switch (foodType)
             {
                 case FoodType.Appetizers:
-                    foods.AddRange(new List<FoodItem>()
+                    foods.AddRange(new List<Food>()
                     {
-                        new FoodItem()
+                        new Food()
                         {
                             Description="A fried onion",
                             Id=0,
@@ -52,9 +52,9 @@ namespace Carry_In.Pages.Restaurant.FoodTabs
                     });
                     break;
                 case FoodType.Beverages:
-                    foods.AddRange(new List<FoodItem>()
+                    foods.AddRange(new List<Food>()
                     {
-                        new FoodItem()
+                        new Food()
                         {
                             Description="A cold, refreshing alcholic beverage.",
                             Id=0,
@@ -64,9 +64,9 @@ namespace Carry_In.Pages.Restaurant.FoodTabs
                     });
                     break;
                 case FoodType.Desserts:
-                    foods.AddRange(new List<FoodItem>()
+                    foods.AddRange(new List<Food>()
                     {
-                        new FoodItem()
+                        new Food()
                         {
                             Description="Yummy icecream",
                             Id=0,
@@ -76,9 +76,9 @@ namespace Carry_In.Pages.Restaurant.FoodTabs
                     });
                     break;
                 case FoodType.Entrees:
-                    foods.AddRange(new List<FoodItem>()
+                    foods.AddRange(new List<Food>()
                     {
-                        new FoodItem()
+                        new Food()
                         {
                             Description="Pork fried rice",
                             Id=0,

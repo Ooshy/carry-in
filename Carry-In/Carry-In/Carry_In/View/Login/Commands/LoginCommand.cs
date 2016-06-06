@@ -1,10 +1,10 @@
 ﻿using Carry_In.Login;
-using Carry_In.Pages.Home;
+using Carry_In.View.Home;
 using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Login.Commands
+namespace Carry_In.View.Login.Commands
 {
     public class LoginCommand : ICommand
     {

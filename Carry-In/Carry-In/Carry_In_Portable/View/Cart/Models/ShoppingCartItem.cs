@@ -1,6 +1,6 @@
 ﻿
 
-namespace Carry_In.Pages.Cart.Models
+namespace Carry_In.View.Cart.Models
 {
     public class ShoppingCartItem
     {

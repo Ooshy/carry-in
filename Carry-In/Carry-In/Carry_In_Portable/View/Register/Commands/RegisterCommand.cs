@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Input;
 
-namespace Carry_In.Pages.Register.Commands
+namespace Carry_In.View.Register.Commands
 {
     public class RegisterCommand : ICommand
     {
@@ -19,16 +19,11 @@ namespace Carry_In.Pages.Register.Commands
 
         public bool CanExecute(object parameter)
         {
-            // if already logged in, return false
-            // else return true
             return CanRegister; //TODO change this
         }
 
         public async void Execute(object parameter)
         {
-            
-            
-
             var success = await RegisterPage.RegisterViewModel.Register();
 
             if (success)

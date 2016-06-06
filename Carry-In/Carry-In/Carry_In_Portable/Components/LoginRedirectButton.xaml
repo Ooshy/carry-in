@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ToolbarItem x:Name="_LoginRedirectButton"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carry_In.Components.LoginRedirectButton"
+             Icon = "login_icon.png"
+             Text = "Login">
+  <!--BindingContext="{Binding Source={x:Reference _LoginRedirectButton}, Path=.}"-->
+  <!--<ToolbarItem.Triggers>
+    <Setter Property="Visibility" Value="Visible" />
+    <DataTrigger TargetType="ToolbarItem"
+                 Binding="{Binding LoggedIn}"
+                 Value="true">
+      <Setter Property="Visibility" Value="Collapsed" />
+    </DataTrigger>
+  </ToolbarItem.Triggers>-->
+</ToolbarItem>

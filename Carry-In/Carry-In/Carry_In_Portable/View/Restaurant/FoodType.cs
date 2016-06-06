@@ -1,4 +1,4 @@
-﻿namespace Carry_In.Pages.Restaurant
+﻿namespace Carry_In.View.Restaurant
 {
     public enum FoodType
     {

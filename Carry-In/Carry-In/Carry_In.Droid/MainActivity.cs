@@ -19,7 +19,8 @@ namespace Carry_In.Droid
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new Carry_In.App ());
 
-            
+           
+
         }
 	}
 }

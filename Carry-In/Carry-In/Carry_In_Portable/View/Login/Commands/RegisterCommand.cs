@@ -3,7 +3,7 @@ using Carry_In.Register;
 using System;
 using System.Windows.Input;
 
-namespace Carry_In.Pages.Login.Commands
+namespace Carry_In.View.Login.Commands
 {
     public class RegisterCommand : ICommand
     {

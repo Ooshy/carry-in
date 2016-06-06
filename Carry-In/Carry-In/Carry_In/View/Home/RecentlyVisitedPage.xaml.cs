@@ -2,13 +2,13 @@
 using Carry_In.Home;
 using Xamarin.Forms;
 using System;
-using Carry_In.Pages.Home;
+using Carry_In.View.Home;
 using Carry_In.Components.Login;
 using System.Collections.Generic;
-using Carry_In.Pages.Restaurant;
-using Carry_In.Pages.Restaurant.FoodTabs;
+using Carry_In.View.Restaurant;
+using Carry_In.View.Restaurant.FoodTabs;
 
-namespace Carry_In.Pages.Home
+namespace Carry_In.View.Home
 {
     public partial class RecentlyVisitedPage : ContentPage, Refreshable
     {
@@ -26,14 +26,14 @@ namespace Carry_In.Pages.Home
 
         }
 
-        private class RecentsListItemWithImage : Models.Restaurant
+        private class RecentsListItemWithImage : Model.Restaurant
         {
             public ImageSource Source { get; set; }
         }
         private void InitializeRecents()
         {
 
-            RecentPlacesListView.ItemsSource = new Models.Restaurant[]
+            RecentPlacesListView.ItemsSource = new Model.Restaurant[]
             {
                 new RecentsListItemWithImage()
                 {
@@ -104,7 +104,7 @@ namespace Carry_In.Pages.Home
         {
             if (RecentPlacesListView.SelectedItem != null)
             {
-                var theRestaurant = e.SelectedItem as Models.Restaurant;
+                var theRestaurant = e.SelectedItem as Model.Restaurant;
 
                 if (theRestaurant == null)
                     return;
@@ -118,20 +118,15 @@ namespace Carry_In.Pages.Home
             }
         }
 
-        private LoginToolbarItem _loginToolbarItem;
-        public LoginToolbarItem LoginToolbarItem => _loginToolbarItem ?? (_loginToolbarItem = new LoginToolbarItem());
         public bool? RefreshScreen()
-        {
-            LoginToolbarItem.Text = "Login";
+        {            
+            //if (!App.LoggedIn)
+            //    if (!ToolbarItems.Contains(LoginRedirectButton))
+            //        ToolbarItems.Add(LoginRedirectButton);
             
-            if (!App.LoggedIn)
-            {
-                if (!ToolbarItems.Contains(LoginToolbarItem))
-                    ToolbarItems.Add(LoginToolbarItem);
-            }
-            else
-                if (ToolbarItems.Contains(LoginToolbarItem))
-                    ToolbarItems.Remove(LoginToolbarItem);
+            //else
+            //    if (ToolbarItems.Contains(LoginRedirectButton))
+            //        ToolbarItems.Remove(LoginRedirectButton);
 
             return null;
         }

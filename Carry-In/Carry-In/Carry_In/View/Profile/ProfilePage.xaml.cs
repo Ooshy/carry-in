@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Profile
+namespace Carry_In.View.Profile
 {
 	public partial class ProfilePage : ContentPage
 	{

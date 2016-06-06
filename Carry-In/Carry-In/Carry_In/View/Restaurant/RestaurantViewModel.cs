@@ -1,10 +1,10 @@
 ﻿
-//namespace Carry_In.Pages.Restaurant
+//namespace Carry_In.View.Restaurant
 //{
 //    public partial class RestaurantViewModel
 //    {
-//        public Models.Restaurant RestaurantModel { get; set; }
-//        public RestaurantViewModel(Models.Restaurant restaurant)
+//        public ModelRestaurant RestaurantModel { get; set; }
+//        public RestaurantViewModel(ModelRestaurant restaurant)
 //        {
 //            RestaurantModel = restaurant;
 //        }

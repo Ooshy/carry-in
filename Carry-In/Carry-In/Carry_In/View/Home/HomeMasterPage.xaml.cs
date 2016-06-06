@@ -1,7 +1,7 @@
 ﻿using Carry_In.Cart;
 using Carry_In.Confirmation;
-using Carry_In.Pages.Profile;
-using Carry_In.Pages.Settings;
+using Carry_In.View.Profile;
+using Carry_In.View.Settings;
 using Carry_In.Receipt;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Home
+namespace Carry_In.View.Home
 {
 	public partial class HomeMasterPage : ContentPage
 	{

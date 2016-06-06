@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Input;
 
-namespace Carry_In.Pages.Register.Commands
+namespace Carry_In.View.Register.Commands
 {
     public class RegisterCommand : ICommand
     {

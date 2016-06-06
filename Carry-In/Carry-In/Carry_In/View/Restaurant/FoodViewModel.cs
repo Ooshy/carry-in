@@ -1,12 +1,12 @@
-﻿using Carry_In.Models;
+﻿using Carry_In.Model;
 using System.Collections.Generic;
 
-namespace Carry_In.Pages.Restaurant.FoodTabs
+namespace Carry_In.View.Restaurant.FoodTabs
 {
     public class RestaurantViewModel
     {
-        public Models.Restaurant RestaurantModel { get; set; }
-        public RestaurantViewModel(Models.Restaurant restaurant)
+        public ModelRestaurant RestaurantModel { get; set; }
+        public RestaurantViewModel(ModelRestaurant restaurant)
         {
             RestaurantModel = restaurant;
         }

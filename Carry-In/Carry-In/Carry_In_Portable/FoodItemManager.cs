@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using Carry_In.Models;
+using Carry_In.Model;
 
 #if OFFLINE_SYNC_ENABLED
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
@@ -29,7 +29,7 @@ namespace Carry_In
 #if OFFLINE_SYNC_ENABLED
         IMobileServiceSyncTable<FoodItem> todoTable;
 #else
-        IMobileServiceTable<FoodItem> foodTable;
+        IMobileServiceTable<Food> foodTable;
 #endif
 
         private FoodItemManager()
@@ -46,7 +46,7 @@ namespace Carry_In
 
             this.todoTable = client.GetSyncTable<FoodItem>();
 #else
-            this.foodTable = client.GetTable<FoodItem>();
+            this.foodTable = client.GetTable<Food>();
 #endif
         }
 
@@ -69,10 +69,10 @@ namespace Carry_In
 
         public bool IsOfflineEnabled
         {
-            get { return foodTable is Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable<FoodItem>; }
+            get { return foodTable is Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable<Food>; }
         }
 
-        public async Task<ObservableCollection<FoodItem>> GetFoodItemsAsync(bool syncItems = false)
+        public async Task<ObservableCollection<Food>> GetFoodItemsAsync(bool syncItems = false)
         {
             try
             {
@@ -82,10 +82,10 @@ namespace Carry_In
                     await this.SyncAsync();
                 }
 #endif
-                IEnumerable<FoodItem> items = await foodTable
+                IEnumerable<Food> items = await foodTable
                     .ToEnumerableAsync();
 
-                return new ObservableCollection<FoodItem>(items);
+                return new ObservableCollection<Food>(items);
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -98,7 +98,7 @@ namespace Carry_In
             return null;
         }
 
-        public async Task SaveTaskAsync(FoodItem item)
+        public async Task SaveTaskAsync(Food item)
         {
             if (item.Id == null)
             {

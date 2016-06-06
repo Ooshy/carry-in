@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carry_In.View.Home.RecentlyVisitedPage"
+             xmlns:recents="clr-namespace:Carry_In.View.Recents"
+             xmlns:login="clr-namespace:Carry_In.Components"
+             Style="{StaticResource iconsBackground}"
+             Title="Recently Visited"
+             x:Name="_RecentlyVisitedPage">
+  <ContentPage.ToolbarItems>
+    <login:LoginRedirectButton 
+                               Name="Login" 
+                               Command="{Binding OnLogin}"
+                               CommandParameter="{Binding Source={x:Reference _RecentlyVisitedPage}, Path=LoginService}"/>
+  </ContentPage.ToolbarItems>
+  <ScrollView Margin="0,5,0,0">
+    <StackLayout>
+      <ListView  x:Name="RecentPlacesListView" RowHeight="100" SeparatorVisibility="Default">
+        <ListView.ItemTemplate BackgroundColor="{StaticResource primary_light}">
+          <DataTemplate>
+            <ViewCell>
+              <Grid Padding="0,0,0,5">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ContentView Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="4" Padding="20,0,10,5">
+                  <Image  Aspect="AspectFit" Source="{Binding Source}" />
+                </ContentView>
+               
+                <StackLayout  Orientation="Horizontal"
+                              Grid.Row="3"
+                              Grid.RowSpan="1"
+                              Grid.Column="11"
+                              Grid.ColumnSpan="2"
+                              Margin="0,0,10,0">
+                  
+                  <Label Text="$"
+                         Style="{StaticResource restaurantNameListLabel}"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"
+                         FontSize="Medium"/>
+                  
+                  <Label Text="{Binding Expensiveness}"
+                         Style="{StaticResource restaurantNameListLabel}"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"
+                         FontSize="Medium"/>
+                </StackLayout>
+                
+                <Label Text="{Binding Genre}"
+                       Style="{StaticResource restaurantNameListLabel}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontSize="Medium"
+                       Grid.Row="1"
+                       Grid.RowSpan="1"
+                       Grid.Column="4"
+                       Grid.ColumnSpan="4"
+                       Margin="5,0,0,0"/>
+
+                <StackLayout Orientation="Horizontal"
+                             Grid.Row="3"
+                             Grid.RowSpan="1"
+                             Grid.Column="4"
+                             Grid.ColumnSpan="2"
+                             Margin="5,0,0,0">
+                  
+                  <Label Text="{Binding Distance}"
+                         Style="{StaticResource restaurantNameListLabel}"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Start"
+                         FontSize="Medium" />
+                  <Label Text="mi"
+                         Style="{StaticResource restaurantNameListLabel}"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Start"
+                         FontSize="Small"/>
+                </StackLayout>
+
+                <Label Text="{Binding Title}"
+                       Style="{StaticResource restaurantNameListLabel}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontSize="Large"
+                       Grid.Row="0"
+                       Grid.RowSpan="1"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="13"/>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      <!--<Label Text="Nearby" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>
+      <Label Text="Favorites" FontSize="Large" Style="{StaticResource primaryLabel}" HorizontalOptions="Center"/>-->
+
+
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

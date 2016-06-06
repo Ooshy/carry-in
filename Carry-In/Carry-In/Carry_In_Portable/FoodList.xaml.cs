@@ -1,4 +1,4 @@
-﻿using Carry_In.Models;
+﻿using Carry_In.Model;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -48,7 +48,7 @@ namespace Carry_In
         }
 
         // Data methods
-        async Task AddItem(FoodItem item)
+        async Task AddItem(Food item)
         {
             await manager.SaveTaskAsync(item);
             foodList.ItemsSource = await manager.GetFoodItemsAsync();
@@ -63,7 +63,7 @@ namespace Carry_In
 
         public async void OnAdd(object sender, EventArgs e)
         {
-            var food = new FoodItem { Name = newItemName.Text };
+            var food = new Food { Name = newItemName.Text };
             await AddItem(food);
 
             newItemName.Text = string.Empty;
@@ -73,7 +73,7 @@ namespace Carry_In
         // Event handlers
         public async void OnSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var todo = e.SelectedItem as FoodItem;
+            var todo = e.SelectedItem as Food;
             if (Device.OS != TargetPlatform.iOS && todo != null)
             {
                 // Not iOS - the swipe-to-delete is discoverable there
@@ -99,7 +99,7 @@ namespace Carry_In
         public async void OnComplete(object sender, EventArgs e)
         {
             var mi = ((MenuItem)sender);
-            var todo = mi.CommandParameter as FoodItem;
+            var todo = mi.CommandParameter as Food;
             //await CompleteItem(todo);
         }
 

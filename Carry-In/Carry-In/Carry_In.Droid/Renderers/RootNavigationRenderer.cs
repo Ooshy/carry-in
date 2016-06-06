@@ -25,6 +25,7 @@ namespace Carry_In.Droid
             
             actionBar.Title = "Home";
             actionBar.SetDisplayShowTitleEnabled(true);
+            actionBar.DisplayOptions |= ActionBarDisplayOptions.HomeAsUp;
             actionBar.SetIcon(Drawable.menu_icon);
         }
     }

@@ -1,5 +1,5 @@
 ﻿
-using Carry_In.Pages.Register.Models;
+using Carry_In.View.Register.Models;
 using System.Threading.Tasks;
 using System;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Carry_In.Models
+namespace Carry_In.Model
 {
     public class Location
     {

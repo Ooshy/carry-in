@@ -1,4 +1,4 @@
-﻿using Carry_In.Components.Login;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Carry_In.Pages.Settings
+namespace Carry_In.View.Settings
 {
 	public partial class SettingsPage : ContentPage
 	{
@@ -15,8 +15,8 @@ namespace Carry_In.Pages.Settings
 		{
 			InitializeComponent ();
 
-            if (!App.LoggedIn)
-                ToolbarItems.Add(new LoginToolbarItem());
+            //if (!App.LoggedIn)
+            //    ToolbarItems.Add(new LoginRedirectButton());
         }
 	}
 }

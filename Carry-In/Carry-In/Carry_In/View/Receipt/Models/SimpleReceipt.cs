@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Carry_In.Pages.Receipt.Models
+namespace Carry_In.View.Receipt.Models
 {
     public class RestaurantItem
     {
